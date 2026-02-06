@@ -11,3 +11,17 @@ Sua chave fica salva só no seu navegador, nada vai pro servidor.
 ---
 
 Next.js • TypeScript • Tailwind • Gemini API
+
+---
+
+## Contribuindo
+
+Este projeto é **100% open source** sob a [licença MIT](./LICENSE).
+
+Sinta-se à vontade para:
+- 🍴 Fazer fork
+- 🐛 Reportar bugs
+- 💡 Sugerir melhorias
+- 🔧 Abrir pull requests
+
+Qualquer contribuição é bem-vinda!
