@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  
+  /* Custom Palette based on requirements */
+  --score-green: #22c55e;
+  --score-orange: #f97316;
+  --score-red: #ef4444;
+  --input-bg: #f9fafb;
+  --border-color: #e5e7eb;
+}
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --color-score-green: var(--score-green);
+  --color-score-orange: var(--score-orange);
+  --color-score-red: var(--score-red);
+  --color-input-bg: var(--input-bg);
+  --color-border-subtle: var(--border-color);
+  
+  --radius-sm: 2px;
+  --radius-md: 4px; /* Max allowed radius */
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for a more premium feel on Windows */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Utilities for strict design enforcement */
+@layer utilities {
+  .no-gradient {
+    background-image: none !important;
+  }
+  
+  .sharp-border {
+    border-radius: 4px !important;
+  }
+}
